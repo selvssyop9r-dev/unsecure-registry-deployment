@@ -2,11 +2,11 @@ pipeline {
     agent any
     environment {
         // Replace with the Private IP of your Registry EC2 instance
-        REGISTRY_URL = '<Registry-EC2-Private-IP>:5000'
+        REGISTRY_URL = '54.157.211.155:5000'
         IMAGE_NAME = 'unsec-reg-ec2-node-app'
         
         // Replace with the Private IP of your Target EC2 instance
-        TARGET_EC2_IP = '<Registry-EC2-Private-IP>' 
+        TARGET_EC2_IP = '172.31.31.194' 
     }
     stages {
         stage('Checkout Code') {
